@@ -1,0 +1,104 @@
+
+
+.section-4 {
+    display: flex;
+    gap: 5.63rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCDCDC;
+    padding: 2.5rem;
+    border-radius: 1.875rem;
+    margin: 1.25rem;
+    width: 87.5rem;
+    height: 40.3125rem;
+    flex-shrink: 0;
+}
+
+.text {
+    margin: 4.06rem 0 4.81rem 0;
+
+}
+.text-content {
+    max-width: 50%;
+    margin-left: 6.31rem;
+}
+
+.text-content h1 {
+    color: #000;
+    font-family: "Inter";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5rem; /* 100% */
+    letter-spacing: -0.2rem;
+    margin-bottom: 1rem;
+}
+
+.texto-medio {
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem; /* 125% */
+    letter-spacing: -0.03rem;
+    width: 29.625rem;
+    margin-bottom: 7.5rem;
+}
+
+
+.text-content button {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 171.429% */
+    letter-spacing: -0.00875rem;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    border-radius: 2.5rem;
+    border: 1px solid var(--Base-40, #BFC0C2);
+    background: #B0B0B0;
+    margin-bottom: 2rem;
+}
+
+.text-content button:hover {
+    background-color: #a0a0a0;
+}
+
+.text-content .small-text {
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: -0.01rem;
+}
+
+.text {
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem; /* 125% */
+    letter-spacing: -0.03rem;
+}
+
+.image-placeholder {
+    background-color: #f5f5f5;
+    width: 30.625rem;
+    height: 31.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+}
+
+.image-placeholder img {
+    width: 30.625rem;
+    height: 31.8125rem;
+    flex-shrink: 0;
+}
