@@ -24,12 +24,6 @@
     padding: 3rem 0;
   }
   
-  .text-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
   p {
     font-size: 1rem;
     color: var(--Base-60, #767A85);
