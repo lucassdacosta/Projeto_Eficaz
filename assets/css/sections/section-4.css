@@ -1,79 +1,131 @@
 .section-4 {
     display: flex;
-    gap: 5.63rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #DCDCDC;
-    padding: 2.5rem;
-    border-radius: 1.875rem;
-    margin: 1.25rem;
     width: 87.5rem;
     height: 40.3125rem;
     flex-shrink: 0;
+    border-radius: 1.875rem;
+    border: 1px solid #000;
+    background: linear-gradient(124deg, #548CAD 11.53%, #97C4D8 57.38%);
+    margin: 1.25rem;
+    
 }
 
-.text {
-    margin: 4.06rem 0 4.81rem 0;
-}
 
-.text-content {
+.title-section-4 {
     margin-left: 6.31rem;
+    margin-top: 3.31rem;
+    display: inline-flex;
+    flex-direction: column;
+align-items: flex-start;
+
+
 }
 
-.text-content h1 {
-    color: #000;
-    font-family: "Inter";
+.title-section-4 h3 {
+    width: 40.875rem;
+    color: #FFF;
+    font-family: Inter;
     font-size: 5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 5rem; /* 100% */
     letter-spacing: -0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 
 .texto-medio {
-    color: #000;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.875rem; /* 125% */
-    letter-spacing: -0.03rem;
-    width: 29.625rem;
-    margin-bottom: 7.5rem;
+    color: #E6E6E6;
+/* subtitle 3 */
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.875rem; /* 125% */
+letter-spacing: -0.03rem;
+width: 29.625rem;
+margin-bottom: 1.47rem;
 }
 
-.text-content button {
+
+.contador{
+    display: flex;
+    gap: 4.28rem;
+}
+
+.hours-number, .minutes-number, .seconds-number{
     color: #FFF;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.5rem; /* 171.429% */
-    letter-spacing: -0.00875rem;
-    text-transform: uppercase;
-    display: inline-flex;
-    padding: 0.5rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1.875rem;
-    border-radius: 2.5rem;
-    border: 1px solid var(--Base-40, #BFC0C2);
-    background: #B0B0B0;
-    margin-bottom: 2rem;
-    width: 6.68rem;
+font-family: Roboto;
+font-size: 7.95356rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+width: 9.0625rem;
+height: 9.313rem;
+
 }
 
-.text-content button:hover {
+.hours-text, .minutes-text, .seconds-text{
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 1.23725rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 0;
+}
+
+
+.title-section-4 button {
+    display: inline-flex;
+padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+justify-content: center;
+align-items: center;
+gap: 1.875rem;
+border-radius: 2.5rem;
+border: 1px solid var(--White-white-700, #B5B5B5);
+background: var(--White-white-50, #FFF);
+color: var(--Black-black-500, #000);
+
+/* Button 1 */
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.5rem; /* 171.429% */
+letter-spacing: -0.00875rem;
+text-transform: uppercase;
+margin-top: 2.75rem;
+margin-bottom: 1rem;
+}
+
+.title-section-4 button img{
+    display: flex;
+padding: 0.5rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 1.875rem;
+background: var(--Black-black-500, #000);
+}
+
+.title-section-4 button:hover {
     background-color: #a0a0a0;
 }
 
-.text-content .small-text {
-    color: #000;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; /* 150% */
-    letter-spacing: -0.01rem;
-    margin-bottom: 3.81rem;
+.title-section-4 .small-text {
+    color: var(--Black-black-50, #E6E6E6);
+
+/* Body 3 */
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 150% */
+letter-spacing: -0.01rem;
+margin: 0;
 }
 
 .text {
@@ -85,18 +137,15 @@
     letter-spacing: -0.03rem;
 }
 
-.image-placeholder {
-    background-color: #f5f5f5;
-    width: 30.625rem;
-    height: 31.8125rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.625rem;
-}
+
 
 .image-placeholder img {
     width: 30.625rem;
     height: 31.8125rem;
     flex-shrink: 0;
+    margin-top: 4.6rem;
+    margin-right: 4.6rem;
+
+
+
 }
