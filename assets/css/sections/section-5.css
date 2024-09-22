@@ -20,10 +20,11 @@
 
 .image-carrossel{
     display: flex;
-    padding-right: 9.5625rem;
+    /* padding-right: 9.5625rem; */
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    gap: 7.0625rem;
 }
 
 .background-product{
