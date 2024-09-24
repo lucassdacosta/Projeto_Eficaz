@@ -4,7 +4,7 @@ footer{
   flex-shrink: 0;
 
   border-radius: 1.875rem;
-  background: #A1A1A1;
+  background-color: #000000;
 
   padding: 5.56rem 5rem 3.38rem 3.56rem;
   margin: 2.5rem 0 1.25rem 0;
@@ -20,6 +20,7 @@ footer{
   display: inline-flex;
   align-items: flex-start;
   gap: 3.5rem;
+  color: #FFF;
 }
 
 .menu{
@@ -32,6 +33,7 @@ footer{
 
 .menu > li{
   list-style: none;
+  color: #BFC0C2;
   display: flex;
   width: 11rem;
   flex-direction: column;
@@ -44,7 +46,7 @@ footer{
 }
 
 .newsletter > h3{
-  color: #000;
+  color: #FFF;
   font-family: Inter;
   font-size: 1.25rem;
   font-style: normal;
@@ -55,7 +57,7 @@ footer{
 }
 
 .newsletter > p{
-  color: #000;
+  color: #BFC0C2;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -98,7 +100,7 @@ footer{
 }
 
 .rights-reserved{
-  color: #000;
+  color: #C2C2C2;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -110,8 +112,8 @@ footer{
 .menus-footer{
   display: flex;
   gap: 2rem;
-
-  color: #000;
+  
+  color: #FFF;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
