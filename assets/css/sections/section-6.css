@@ -110,9 +110,14 @@
     height: 50px;
     border-radius: 50%;
   }
+
+  .author p{
+
+    color: #878787;
+    font-weight: 400;
+  }
   
   .position {
-    color: var(--Base-60, #767A85);
     font-size: 0.8rem;
     margin-bottom: 0;
   }
@@ -125,12 +130,17 @@
     margin-bottom: 5.81rem;
   }
 
-  .arrow-left, .arrow-right{
+  .arrow-left{
+    padding: 1rem;
+    border-radius: 6.25rem;
+    border: 1px solid #CED1D8;
+    background-color: #000000;
+  }
+  .arrow-right{
     padding: 1rem;
     border-radius: 6.25rem;
     border: 1px solid #CED1D8;
   }
-  
   .arrowRight {
     transform: rotate(180deg);
   }
