@@ -3,7 +3,7 @@
   height: 62.1875rem;
   flex-shrink: 0;
   border-radius: 1.875rem;
-  background: linear-gradient(0deg, #F3F5F9 0%, #F3F5F9 100%), linear-gradient(228deg, #91E94C 9.2%, #0EBAE0 83.81%);
+  background: #d3d3d3;
   margin: 1.25rem;
   padding: 6.25rem 6.25rem 8rem;
 }
@@ -99,21 +99,31 @@
   text-decoration-line: line-through;
 }
 
-.button-sec-3{
-  display: flex;
-  padding: 0.5rem 1.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1.875rem;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5rem; 
-  letter-spacing: -0.00875rem;
-  text-transform: uppercase;
-  border-radius: 2.5rem;
-  border: 1px solid var(--Base-40, #BFC0C2);
-  background: #B0B0B0;
+.button-sec3 {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.cart {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  border: 2px solid black; 
+  border-radius: 50%; 
+  padding: 5px; 
+  background-color: black; 
+}
+
+.cart img {
+  position: relative; 
+  z-index: 1; 
 }
