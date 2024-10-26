@@ -1,4 +1,4 @@
-header {
+header{
   width: 90rem;
   height: 5.875rem;
   flex-shrink: 0;
@@ -7,31 +7,19 @@ header {
   background: #FFF;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
-
-  padding: 2.12rem 7.38rem 2.13rem 7.56rem;
+  padding: 2.19rem 2.5rem 2.19rem 2.44rem;
 }
 
-.your-logo {
-  width: 8.4375rem;
-  height: 1.625rem;
-  flex-shrink: 0;
-  margin-right: 10.19rem;
-}
-
-.item {
+.item{
+  list-style: none;
 
   display: flex;
-  
+  gap: 2rem;
 }
 
-.itens li ul {
-  margin-right: 2rem; 
-  white-space: nowrap;
-}
-
-.item ul {
+.item > ul{
   color: var(--Black-black-500, #000);
 
   text-align: center;
@@ -39,24 +27,18 @@ header {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem;
-  /* 171.429% */
+  line-height: 1.5rem; /* 171.429% */
   letter-spacing: -0.00875rem;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0; 
 }
 
-
-.buttons {
+.buttons{
   display: flex;
   gap: 1.56rem;
   align-items: center;
-  padding-left: 8.56rem;
-  white-space: nowrap;
 }
 
-.buttons>button {
+.buttons > button{
   border: none;
   background-color: transparent;
 
@@ -67,18 +49,17 @@ header {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.5rem;
-  /* 171.429% */
+  line-height: 1.5rem; /* 171.429% */
   letter-spacing: -0.00875rem;
   text-transform: uppercase;
 }
 
-.buttons>.line {
+.buttons > .line{
   width: 0.0625rem;
   height: 1.25rem;
   background: #D9D9E3;
 }
 
-button:nth-child(3) {
+button:nth-child(3){
   color: #6987CD;
 }
