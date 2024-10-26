@@ -1,4 +1,4 @@
-footer{
+footer {
   width: 87.5rem;
   height: 45.875rem;
   flex-shrink: 0;
@@ -10,20 +10,20 @@ footer{
   margin: 2.5rem 0 1.25rem 0;
 }
 
-.menu-newsletter{
+.menu-newsletter {
   display: flex;
   gap: 11.44rem;
   margin: 2.94rem 0 10rem 0;
 }
 
-.menus{
+.menus {
   display: inline-flex;
   align-items: flex-start;
   gap: 3.5rem;
-  color: #FFF;
+  color: #fff;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,9 +31,9 @@ footer{
   width: 11rem;
 }
 
-.menu > li{
+.menu > li {
   list-style: none;
-  color: #BFC0C2;
+  color: #bfc0c2;
   display: flex;
   width: 11rem;
   flex-direction: column;
@@ -41,12 +41,12 @@ footer{
   gap: 1rem;
 }
 
-.footer-item > ul{
+.footer-item > ul {
   padding: 0;
 }
 
-.newsletter > h3{
-  color: #FFF;
+.newsletter > h3 {
+  color: #fff;
   font-family: Inter;
   font-size: 1.25rem;
   font-style: normal;
@@ -56,64 +56,64 @@ footer{
   margin-bottom: 1.5rem;
 }
 
-.newsletter > p{
-  color: #BFC0C2;
+.newsletter > p {
+  color: #bfc0c2;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.375rem; 
+  line-height: 1.375rem;
   letter-spacing: -0.00875rem;
   margin-bottom: 2rem;
 }
 
-.newsletter > input{
+.newsletter > input {
   width: 24.9375rem;
   height: 3.75rem;
   flex-shrink: 0;
   border-radius: 6.25rem;
-  border: 1px solid var(--Base-60, #767A85);
-  background: #4B4B4B;
+  border: 1px solid var(--Base-60, #767a85);
+  background: #4b4b4b;
 }
 
-.newsletter > input::placeholder{
-  color: var(--Base-40, #BFC0C2);
+.newsletter > input::placeholder {
+  color: var(--Base-40, #bfc0c2);
   font-family: Inter;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem; 
+  line-height: 1.5rem;
   letter-spacing: -0.01rem;
   padding-left: 1.5rem;
 }
 
-.line-footer{
+.line-footer {
   width: 77.5rem;
   height: 0.0625rem;
   background: #686868;
   margin-bottom: 1.75rem;
 }
 
-.rights-and-menu{
+.rights-and-menu {
   display: flex;
   gap: 23.03rem;
 }
 
-.rights-reserved{
-  color: #C2C2C2;
+.rights-reserved {
+  color: #c2c2c2;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.375rem; 
+  line-height: 1.375rem;
   letter-spacing: -0.00875rem;
 }
 
-.menus-footer{
+.menus-footer {
   display: flex;
   gap: 2rem;
-  
-  color: #FFF;
+
+  color: #fff;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
