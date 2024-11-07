@@ -1,0 +1,40 @@
+.navbar-brand {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-left: 1cm; 
+  }
+
+  .nome-usuario {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: -2px;
+}
+
+.email-usuario {
+    font-size: 0.875rem;
+    color: #6c757d; 
+}
+
+.me-2 {
+    margin-right: 0.5rem; 
+}
+
+.editar-dados {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: black;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    background-color: #f3ebeb54;
+}
+
+.btn {
+    margin-top: -55px;
+}
