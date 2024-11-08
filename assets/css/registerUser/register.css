@@ -2,21 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Inter;
 }
 
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     background-color: #f8f8f8;
 }
 
 .container {
     display: flex;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -28,20 +26,21 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 500px;
+    width: 600px;
 }
 
 .left-section img {
-    width: 80%;
+    width: 127%;
+    margin-left: 400px;
 }
 
 .text-overlay {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 10%;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.0;
 }
 
 .text-overlay span {
@@ -55,19 +54,25 @@ body {
 
 .right-section {
     flex: 1;
-    padding: 40px;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    margin-left: 37%;
+    display: flex;
+    justify-content: start;
+    margin-left: 12rem;
 }
 
 .form-group {
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1.2rem;
 }
 
 .form-group input[type="text"],
@@ -75,16 +80,17 @@ body {
 .form-group input[type="password"],
 .form-group input[type="date"],
 .form-group input[type="file"] {
-    width: 100%;
+    width: 20rem;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f4f4f4;
+    
 }
 
-.form-group.gender input {
-    width: auto;   
-    margin-right: 5px;
+.gender {
+    width: auto;
+    gap: 1rem;
 }
 
 .submit-btn {
@@ -94,10 +100,20 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
     font-size: 1rem;
+    justify-content: center;
+
 }
 
 .submit-btn:hover {
     background-color: #333;
+
 }
+
+.separacao{
+    width: 70%;
+    height: 2px;
+    background-color: rgb(138, 131, 138);
+}
+

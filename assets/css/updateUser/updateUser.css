@@ -1,0 +1,73 @@
+.navbar{
+    background-color: black !important;
+}
+.navbar-brand {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-left: 1cm; 
+  }
+
+  .nome-usuario {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: -2px;
+    color: white;
+}
+
+.email-usuario {
+    font-size: 0.875rem;
+    color: #6c757d; 
+    color: white;
+}
+
+.me-2 {
+    margin-right: 0.5rem; 
+}
+
+.editar-dados {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: black;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    background-color: #f3ebeb54;
+}
+
+.form-control:focus, .form-check-input:focus{
+    border-color: black;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .form-check-input:checked {
+    background-color: black;
+    border-color: #cccccc;
+}
+.form-check-input:checked[type=radio] {
+
+    --bs-form-check-bg-image: 0; 
+}
+.btn {
+    margin-top: -55px;
+    background-color: black !important;
+    font-weight: bold;
+    width: 10rem;
+}
+
+.btn:hover {
+    background-color: white !important;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    transform: scale(1.05);
+    transition: ease-in-out 300ms ;
+    width: 10rem;
+}

@@ -19,7 +19,7 @@ header {
   gap: 2rem;
 }
 
-.item > ul {
+.item > li {
   color: var(--Black-black-500, #000);
 
   text-align: center;
