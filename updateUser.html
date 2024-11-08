@@ -9,14 +9,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/atualizar.css">
+    <link rel="stylesheet" href="./assets/css/updateUser/updateUser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="assets/js/viaCep.js"></script>
     <title>atualizar</title>
 </head>
 
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand">GABINI</a>
+          <a class="navbar-brand"><img src="assets/image/Logo.png" alt=""></a>
           <div class="d-flex align-items-center">
             <div class="d-flex flex-column me-2">
               <span class="nome-usuario">Thais Santos</span>
@@ -72,12 +76,12 @@
                 <div class="d-flex gap-3">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="genero" id="masc" value="Masculino">
-                        <label class="form-check-label" for="masc">Masc.</label>
+                        <label class="form-check-label" for="masc">Masculino</label>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="genero" id="fem" value="Feminino">
-                        <label class="form-check-label" for="fem">Fem.</label>
+                        <label class="form-check-label" for="fem">Feminino</label>
                     </div>
 
                     <div class="form-check">
@@ -88,7 +92,7 @@
             </div>
 
             <div class="col-md-4">
-                <label for="profissao" class="form-label">Profissão</label>
+                <label for="profissao" class="form-label">Username</label>
                 <input type="text" class="form-control" id="profissao" placeholder="">
             </div>
             
@@ -99,24 +103,25 @@
 
             <div class="col-md-4">
                 <label for="cpf" class="form-label">CPF</label>
-                <input type="text" class="form-control" id="cpf" placeholder="">
+                <input type="text" class="form-control" name="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value)">
+                
             </div>
 
             <div class="col-md-4">
                 <label for="foto" class="form-label">Foto</label>
-                <input type="file" class="form-control" id="foto">
+                <input type="text" class="form-control" id="foto">
             </div>
             
             <hr></hr>
 
             <div class="col-md-4">
                 <label for="cep" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep" placeholder="">
+                <input type="text" class="form-control" id="cep" name="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
             </div>
 
             <div class="col-md-4">
                 <label for="logradouro" class="form-label">Logradouro</label>
-                <input type="text" class="form-control" id="logradouro" placeholder="">
+                <input name="rua" type="text" id="rua" size="60" class="form-control" />
             </div>
 
             <div class="col-md-4">
@@ -131,17 +136,17 @@
 
             <div class="col-md-4">
                 <label for="bairro" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="bairro" placeholder="">
+                <input name="bairro" type="text" id="bairro" size="40" class="form-control" />
             </div>
 
             <div class="col-md-4">
                 <label for="localidade" class="form-label">Localidade</label>
-                <input type="text" class="form-control" id="localidade" placeholder="">
+                <input name="cidade" type="text" id="cidade" size="40" class="form-control"/>
             </div>
 
             <div class="col-md-4">
                 <label for="estado" class="form-label">Estado</label>
-                <input type="text" class="form-control" id="estado" placeholder="">
+                <input name="estado" type="text" id="uf" size="40" class="form-control" />
             </div>
             
             <div class="col-md-12 d-flex justify-content-end mt-1">
