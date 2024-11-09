@@ -1,19 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona o botão de edição
     const editButton = document.getElementById('editButton');
+    const signInButton = document.getElementById('signInButton');
+    const signUpButton = document.getElementById('signUpButton');
+    const logoutButton = document.getElementById('logoutButton');
 
-    // Adiciona o evento de clique para redirecionar para a página de atualização
+    const token = localStorage.getItem('authToken');
+
+    const isLoggedIn = !!token;
+    signInButton.hidden = isLoggedIn;
+    signUpButton.hidden = isLoggedIn;
+    editButton.hidden = !isLoggedIn;
+    logoutButton.hidden = !isLoggedIn;
+
     editButton.addEventListener('click', function () {
-        // Recupera o token do localStorage ou sessionStorage
-        const token = localStorage.getItem('authToken'); // ou sessionStorage.getItem('token');
-
-        if (token) {
-            // Se o token existir, redireciona para a página de edição
+        if (isLoggedIn) {
             window.location.href = 'updateUser.html';
+            console.log("Redirecionando para a página de edição...");
         } else {
-            // Se o token não existir, pede ao usuário para fazer login
             alert('Você precisa estar logado para editar o perfil!');
-            window.location.href = '/login.html'; // Redireciona para a página de login
+            window.location.href = '/login.html';
         }
+    });
+
+    logoutButton.addEventListener('click', function () {
+
+        localStorage.removeItem('authToken');
+
+        signInButton.hidden = false;
+        signUpButton.hidden = false;
+        editButton.hidden = true;
+        logoutButton.hidden = true;
+
+        alert("Usuario deslogado")
     });
 });
