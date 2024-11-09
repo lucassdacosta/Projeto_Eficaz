@@ -3,7 +3,6 @@
   gap: 9rem;
   justify-content: center;
   width: 90rem;
-  margin-top: 0.75rem;
 }
 
 .text-sec-1,
@@ -23,8 +22,7 @@
   content: "";
   position: absolute;
   top: -69%;
-  left: -28%;
-  width: 200%;
+  width: 150%;
   height: 200%;
   background-size: cover;
   transform: rotate(30deg);
@@ -35,11 +33,10 @@
   content: "";
   position: absolute;
   top: -32%;
-  left: -39%;
-  width: 200%;
-  height: 200%;
+  width: 150%;
+  height: 150%;
   background-size: cover;
-  transform: rotate(-30deg);
+  transform: rotate(-35deg);
   z-index: -1;
 }
 
@@ -76,6 +73,7 @@
   letter-spacing: -0.25rem;
   text-transform: uppercase;
   margin-bottom: 3.75rem;
+  margin-top: 5rem;
 }
 
 .line-and-paragraph {

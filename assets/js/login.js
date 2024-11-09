@@ -7,21 +7,20 @@ const login = () => {
       Senha: senha
     })
     .then(response => {
-      const token = response.data;  // O token JWT vem na resposta
-      // Armazenar o token no localStorage
+      const token = response.data;  
       localStorage.setItem('authToken', token);
       console.log('Login bem-sucedido, token armazenado!');
-      // Redireciona para a página principal ou para o dashboard
-      window.location.href = '/index.html'; // ou o local da sua página protegida
+      
+      window.location.href = '/index.html';
     })
     .catch(error => {
       console.error('Erro ao fazer login:', error);
+      alert("Usuario ou senha incorretos")
     });
   };
-  
-  // Adiciona o evento ao botão de login
+
   document.getElementById('loginButton').addEventListener('click', login);
-// Função para pegar os dados do usuário
+
 const getUsuario = () => {
     const token = localStorage.getItem('authToken');
   
@@ -31,6 +30,7 @@ const getUsuario = () => {
       })
       .then(response => {
         console.log('Dados do usuário:', response.data);
+        window.location.href = '/index.html';
       })
       .catch(error => {
         console.error('Erro ao acessar os dados do usuário:', error);
@@ -39,7 +39,6 @@ const getUsuario = () => {
       console.log('Token não encontrado. Faça login primeiro.');
     }
   };
-  
-  // Chama a função quando necessário
+
   getUsuario();
     

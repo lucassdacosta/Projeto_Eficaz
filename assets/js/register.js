@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Referência ao formulário e ao botão de submit
-    const form = document.querySelector('form'); // Aqui, usamos o formulário em vez do botão.
-  
-    // Função para realizar o cadastro
+
+    const form = document.querySelector('form');
+
     form.addEventListener('submit', function (event) {
-      // Impedir o comportamento padrão de envio do formulário (evita o envio via URL)
+
       event.preventDefault();
-  
-      // Coleta os dados dos inputs do formulário
+
       const nome = document.querySelector('input[placeholder="Nome"]').value;
       const sobrenome = document.querySelector('input[placeholder="Sobrenome"]').value;
       const email = document.querySelector('input[placeholder="Email"]').value;
@@ -20,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const telefone = document.querySelector('input[placeholder="Telefone"]').value;
       const genero = document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').value : '';
       const imagemPerfil = document.querySelector('input[placeholder="Foto"]').value;
-      
-      // Endereço
+
       const cep = document.querySelector('input[name="cep"]').value;
       const logradouro = document.querySelector('input[name="rua"]').value;
       const complemento = document.querySelector('input[placeholder="Complemento"]').value;
@@ -29,14 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const bairro = document.querySelector('input[name="bairro"]').value;
       const localidade = document.querySelector('input[name="cidade"]').value;
       const estado = document.querySelector('input[name="estado"]').value;
-  
-      // Verificar se as senhas coincidem
+
       if (senha !== confirmarSenha) {
         alert('As senhas não coincidem!');
         return;
       }
-  
-      // Objeto com os dados do usuário para enviar
+
       const userData = {
         username,
         nome,
@@ -60,12 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       };
   
-      // Enviar os dados para a API usando o axios
+
       axios.post('https://localhost:7291/api/Usuario', userData)
         .then(response => {
           console.log('Usuário cadastrado com sucesso:', response.data);
           alert('Cadastro realizado com sucesso!');
-          // Redirecionar para a página de login ou para a área restrita
+
           window.location.href = '/login.html';
         })
         .catch(error => {
