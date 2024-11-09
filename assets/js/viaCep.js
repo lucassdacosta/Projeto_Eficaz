@@ -22,15 +22,15 @@ function meu_callback(conteudo) {
 
 function pesquisacep(valor) {
 
-    var cep = valor.replace(/\D/g, '');
+    let cep = valor.replace(/\D/g, '');
 
     if (cep != "") {
 
-        var validacep = /^[0-9]{8}$/;
+        let validacep = /^[0-9]{8}$/;
 
         if (validacep.test(cep)) {
 
-            var script = document.createElement('script');
+            let script = document.createElement('script');
 
             script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
 

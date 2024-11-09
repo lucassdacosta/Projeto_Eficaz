@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="assets/css/login/login.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-section">
-        <img src="assets/image/headphoneRegister.png" alt="Headphones Image" />
-        <div class="text-overlay">
-          <span>GABINI</span>
-          <span>HEADSET</span>
-          <span>STORE</span>
-        </div>
-      </div>
 
-      <div class="right-section">
-        <h2>Acesse sua conta</h2>
-        <p class="subtitle">Preencha seus dados</p>
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="Email  /  Username" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="assets/css/login/login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="assets/js/login.js" defer></script>
+</head>
 
-          <div class="form-group">
-            <input type="text" placeholder="Senha" />
-          </div>
-
-          <div class="form-group criarConta">
-            <p class="esqueceuSenha">Esqueceu a senha?</p>
-        </div>
-
-          <div class="form-group">
-            <button type="button" class="submit-btn"><a href="index.html">ENTRAR</a></button>
-          </div>
-
-          <div class="form-group criarConta">
-            <p class="naoTemConta">Não tem uma conta?<a href="register.html" class="cadastre"> Cadastre-se agora mesmo!</a></p>
-        </div>
-        </form>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="assets/image/headphoneRegister.png" alt="Headphones Image" />
+      <div class="text-overlay">
+        <span>GABINI</span>
+        <span>HEADSET</span>
+        <span>STORE</span>
       </div>
     </div>
-  </body>
+
+    <div class="right-section">
+      <h2>Acesse sua conta</h2>
+      <p class="subtitle">Preencha seus dados</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="text" id="username" placeholder="Email / Username" required />
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="senha" placeholder="Senha" required />
+        </div>
+
+        <div class="form-group criarConta">
+          <p class="esqueceuSenha">Esqueceu a senha?</p>
+        </div>
+
+        <div class="form-group">
+          <button class="submit-btn" id="loginButton" type="button">Entrar</button>
+        </div>
+
+        <div class="form-group criarConta">
+          <p class="naoTemConta">Não tem uma conta? <a href="register.html" class="cadastre"> Cadastre-se agora mesmo!</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
