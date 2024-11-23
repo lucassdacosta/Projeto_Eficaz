@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Inter;
 }
 
 body {
@@ -109,7 +107,6 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     width: 25%;
     height: 3rem;
     font-size: 1rem;

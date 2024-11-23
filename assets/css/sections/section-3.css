@@ -39,7 +39,6 @@
 .description-img-sec-3 {
   color: var(--Base-100, #1f2026);
   text-align: center;
-  font-family: Inter;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -74,7 +73,6 @@
 .preco-item h2 {
   color: #000;
   /* h2 */
-  font-family: "Inter";
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
